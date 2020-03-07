@@ -1,6 +1,9 @@
 # ignoring data not re-publishable due to licensing
 data/
 
+# ignoring published version of CEE paper due to copyright
+/latex/CEE/published
+
 # History files
 .Rhistory
 .Rapp.history
