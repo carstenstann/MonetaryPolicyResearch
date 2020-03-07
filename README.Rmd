@@ -1,0 +1,15 @@
+---
+output: rmarkdown::github_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r, echo = FALSE, warning = FALSE, message = FALSE, fig.path = "README_figs/README-"}
+knitr::opts_chunk$set(collapse=TRUE, fig.retina=2, fig.path = "README_figs/README-")
+
+
+```
+
+# Unconventional Monetary Policy Spillover Effects
+
+Since the Global Financial Crisis and the development of non-standard monetary measures, spillover effects from monetary policies in large advanced economies to emerging market economies (EME) have become the subject of considerable debate and a focal point of criticism from policy makers in EMEs.
