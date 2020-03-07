@@ -169,3 +169,13 @@ symbols <- mena_symbols %>%
           `Sovereign 3Y` = sovereign_bond_yield_3y,
           `Sovereign 10Y` = sovereign_bond_yield_10y,
           `Stock Index` = stock_market_index_benchmark_if_available) 
+
+# check missingness 
+mena_data %>% 
+   group_by(country) %>% 
+   arrange(country, date) %>% 
+   select(-date) %>% 
+   gg_miss_var(facet = country) 
+
+ggsave("missingness.png", device = "png", path = "./latex/MENA/plots", width = 7, height = 5, dpi = 300)
+
